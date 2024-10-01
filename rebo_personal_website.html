@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ريبو | repo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #0d0d0d; /* لون خلفية داكن */
+            color: #e0e0e0; /* لون النص */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* اجعل الصفحة على الأقل بارتفاع الشاشة */
+        }
+        header {
+            width: 100%;
+            background: linear-gradient(135deg, #1c1c1c, #007f7f); /* تدرج لوني هادئ */
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            width: 150px; /* عرض اللوجو */
+            border-radius: 15%; /* زوايا مدورة */
+            margin-bottom: 10px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #ffffff; /* لون العنوان */
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+        }
+        .container {
+            width: 90%; /* استخدم 90% من العرض */
+            max-width: 1200px; /* يمكنك تعديل هذا الحد الأقصى إذا كنت تريد */
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #222; /* خلفية داكنة */
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+            flex: 1; /* اجعل الحاوية تأخذ المساحة المتبقية */
+        }
+        h2 {
+            color: #ff007f; /* لون العناوين الفرعية */
+            margin-bottom: 10px;
+            border-bottom: 2px solid #00ffff;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        .channels, .contact {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #2b2b2b; /* لون داكن */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        .channel-item, .contact-item {
+            background: #333; /* خلفية داكنة */
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+        .channel-item:hover, .contact-item:hover {
+            background: #444; /* تغيير الخلفية عند التمرير */
+        }
+        .channel-item h3, .contact-item h3 {
+            margin: 0;
+            color: #00ffff; /* لون العناوين */
+        }
+        .channel-item p, .contact-item p {
+            color: #cccccc; /* لون النص العادي */
+        }
+        a {
+            color: #ff007f; /* لون الروابط */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: auto; /* دفع الفوتر للأسفل */
+            padding: 10px 0;
+            background-color: #1b2631;
+            color: #cccccc;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* استعلامات الوسائط لتصميم متجاوب */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em; /* حجم خط أصغر للأجهزة الصغيرة */
+            }
+            .container {
+                padding: 10px; /* تقليل الهوامش للأجهزة الصغيرة */
+            }
+            .channel-item, .contact-item {
+                padding: 10px; /* تقليل الهوامش للعناصر */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em; /* حجم خط أصغر للأجهزة الأصغر */
+            }
+            header img {
+                width: 120px; /* تقليل حجم الشعار */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://yt3.ggpht.com/k5W8R3A1DUlZqdrnSTLz18cY58B0uWwR2_YV203AiuNawzCYVIxmgkfaUhCDyRMRKw0Jzw36lck=s600-c-k-c0x00ffffff-no-rj-rp-mo" alt="شعار ريبو">
+    <h1>ريبو | repo</h1>
+</header>
+
+<div class="container">
+    <section class="about">
+        <h2>مين أنا</h2>
+        <p>أنا ريبو من مصر بحب الألعاب من صغري وهنا هتعرف عني معلومات أكتر وإزاي تقدر تتواصل معايا.</p>
+    </section>
+
+    <section class="channels">
+        <h2>قنواتي</h2>
+        <div class="channel-item" onclick="window.open('https://www.youtube.com/@repo_.1', '_blank')">
+            <h3>repo | ريبو</h3>
+            <p>تقدر تتابعني على يوتيوب من هنا!</p>
+        </div>
+        <div class="channel-item" onclick="window.open('https://www.tiktok.com/@repo_102', '_blank')">
+            <h3>repo | ريبو</h3>
+            <p>تقدر تتابعني على تيك توك من هنا!</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>طرق التواصل</h2>
+        <div class="contact-item" onclick="window.open('https://discord.gg/FKMPZngNMP', '_blank')">
+            <h3>ار بي ال | RPL</h3>
+            <p>اضغط هنا للانضمام!</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 ريبو | repo - كل الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
